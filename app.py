@@ -19,7 +19,7 @@ def hello():
     html = "<h3>Hello {name}!</h3>" \
            "<b>Hostname:</b> {hostname}<br/>" \
            "<b>Visits:</b> {visits}"
-    return html.format(name=os.getenv('NAME', 'world'),
+    return html.format(name=os.getenv('NAME', 'Jason'),
                        hostname=socket.gethostname(), visits=visits)
 
 if __name__ == '__main__':
